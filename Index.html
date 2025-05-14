@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafa - Fisoratana sy Mifandraisa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="signupSection">
+            <h1>Fisoratana ao amin'ny Tafa</h1>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="username">Anarana</label>
+                    <input type="text" id="username" name="username" required>
+                    <div class="error" id="usernameError">Azafady, ampidiro ny anarana</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Mailaka</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error" id="emailError">Azafady, ampidiro mailaka marina</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Teny fanalahidy</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error" id="passwordError">Azafady, ampidiro teny fanalahidy 6 farafahakeliny</div>
+                </div>
+                <button type="submit">Hisoratra</button>
+            </form>
+        </div>
+
+        <div id="postSignupSection" class="post-signup-section">
+            <h1>Tafa! Tongasoa!</h1>
+            <p class="welcome-message" id="welcomeMessage">Misaotra anao noho ny fisoratanao!</p>
+
+            <div class="whatsapp-contact">
+                <p>Mifandraisa aminay amin'ny WhatsApp:</p>
+                <div class="contact-item">
+                    <a href="https://wa.me/+261341227582" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                        Rija: +261 34 12 275 82
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://wa.me/+261325783473" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                        Ghost: +261 32 57 834 73
+                    </a>
+                </div>
+            </div>
+
+            <div class="announcement">
+                <h2>Annonce Vaovao!</h2>
+                <p>Miaraha aminay ao amin'ny Tafa, toerana ahafahanao mifandray, mizara, ary mahita vaovao mahaliana! Ny tranokalanay dia manolotra traikefa miavaka ho an'ny mpampiasa rehetra. Mijanòna hifandray amin'ny alalan'ny WhatsApp ho an'ny fanavaozana farany!</p>
+            </div>
+
+            <div id="professionalFormSection">
+                <h2>Fampahalalana Matihanina</h2>
+                <form id="professionalForm">
+                    <div class="form-group">
+                        <label for="fullName">Anarana feno</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <div class="error" id="fullNameError">Azafady, ampidiro ny anarana feno</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cin">Laharana CIN</label>
+                        <input type="text" id="cin" name="cin" required>
+                        <div class="error" id="cinError">Azafady, ampidiro ny laharana CIN marina (12 isa)</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Sary</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                        <div class="error" id="photoError">Azafady, misafidiana sary</div>
+                        <img id="photoPreview" class="photo-preview" alt="Photo Preview">
+                    </div>
+                    <button type="submit">Hampiditra</button>
+                </form>
+            </div>
+
+            <div id="confirmationSection" class="confirmation-section">
+                <h2>Fampahalalana Voamarina!</h2>
+                <img id="confirmedPhoto" alt="Photo confirmée">
+                <p><strong>Anarana feno:</strong> <span id="confirmedFullName"></span></p>
+                <p><strong>Laharana CIN:</strong> <span id="confirmedCIN"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
